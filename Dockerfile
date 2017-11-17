@@ -24,6 +24,8 @@ RUN /bin/bash -l -c "git clone git://github.com/beefproject/beef.git"
 WORKDIR beef
 RUN /bin/bash -l -c "bundle install"
 
+ADD ./scripts/init.sh /usr/local/bin/init.sh
+
 EXPOSE 3000
 
 # Starting script (DB + updates)
