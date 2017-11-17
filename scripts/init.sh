@@ -5,4 +5,5 @@ source /usr/local/rvm/scripts/rvm
 /opt/msf/msfupdate --git-branch master
 #/opt/msf/msfconsole
 #/bin/bash
-/opt/beef/beef
+cd /opt/beef
+./beef
