@@ -4,7 +4,9 @@ MAINTAINER Phocean <jc@phocean.net>
 
 # install nodejs
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y \
+    nodejs git bundler build-essential patch \
+    ruby-dev zlib1g-dev liblzma-dev libsqlite3-dev
 
 # set locales
 RUN locale-gen en_US.UTF-8
