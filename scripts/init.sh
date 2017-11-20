@@ -8,4 +8,5 @@
 cd /opt/beef
 sed -i 's/\(\s\)passwd: "beef"/\1passwd: "docker_beef"/g' config.yaml
 sed -i 's/#public: ""/public: "admin.beef"/g' config.yaml
-./beef
+sed -i 's/#public_port: ""/public_port: "80"/g' config.yaml
+./beef -x -v
